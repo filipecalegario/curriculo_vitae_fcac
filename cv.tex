@@ -1,0 +1,99 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-concrete}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,right]{fcac_250x250px.jpg}
+\name{Filipe}{Calegario}
+%\position{Designer de Interação{\enskip\cdotp\enskip}Pesquisador{\enskip\cdotp\enskip}Professor{\enskip\cdotp\enskip}Inventor}
+\address{Rua Xavier Marques, 234, Apt 903. Graças, Recife - PE. CEP: 52050-230}
+\mobile{(+55) 81 98565 5077}
+\email{filipe.calegario@gmail.com}
+\homepage{www.filipecalegario.net}
+% \github{filipe.calegario}
+% \linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+\skype{filipe.calegario}
+% \reddit{reddit-id}
+\extrainfo{currículo lattes: \href{http://lattes.cnpq.br/7709859860474826}{http://lattes.cnpq.br/7709859860474826}}
+
+%\quote{``Be the change that you want to see in the world."}
+%\quote{Currículo Lattes: http://lates.org}
+%-------------------------------------------------------------------------------
+\begin{document}
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Filipe Calegario~~~·~~~Curriculum Vitae}
+  {\thepage/\pageref{LastPage}}
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{cv/educacao.tex}
+% \input{cv/extracurricular.tex}
+\input{cv/publicacoes.tex}
+\input{cv/bancas.tex}
+\input{cv/experiencia.tex}
+\input{cv/participacoes.tex}
+\input{cv/premios.tex}
+\input{cv/linguas.tex}
+\input{cv/competencias.tex}
+%-------------------------------------------------------------------------------
+\end{document}
